@@ -1,0 +1,1206 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><style>#right-panel {
+    background-color: #fff;
+}
+
+#right-panel .cover-top {
+    background: linear-gradient(to bottom, #fff 50%, transparent);
+}
+
+#cover-bottom #cover-bottom-background-right {
+    background: #fff;
+}
+
+@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+#container {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #373737;
+  font-family: "Roboto", "Noto Sans", "Ubuntu", "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif, "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft Yahei";
+  font-size: 14px;
+  line-height: 2;
+  word-wrap: break-word;
+  background-color: #fff;
+}
+
+#container a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#container a:active,
+#container a:hover {
+  outline-width: 0;
+}
+
+#container strong {
+  font-weight: inherit;
+}
+
+#container strong {
+  font-weight: bolder;
+}
+
+#container h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+#container img {
+  border-style: none;
+}
+
+#container svg:not(:root) {
+  overflow: hidden;
+}
+
+#container code,
+#container kbd,
+#container pre {
+  font-family: "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  font-size: 1em;
+}
+
+#container hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+#container input {
+  font: inherit;
+  margin: 0;
+}
+
+#container input {
+  overflow: visible;
+}
+
+#container button:-moz-focusring,
+#container [type="button"]:-moz-focusring,
+#container [type="reset"]:-moz-focusring,
+#container [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+#container [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+#container table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#container td,
+#container th {
+  padding: 0;
+}
+
+#container * {
+  box-sizing: border-box;
+}
+
+#container input {
+  font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#container a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+#container a:hover,
+#container a:active {
+  text-decoration: underline;
+}
+
+#container hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#container hr::before {
+  display: table;
+  content: "";
+}
+
+#container hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#container h1 {
+  font-size: 30px;
+}
+
+#container h2 {
+  font-size: 21px;
+}
+
+#container h3 {
+  font-size: 16px;
+}
+
+#container h4 {
+  font-size: 14px;
+}
+
+#container h5 {
+  font-size: 12px;
+}
+
+#container h6 {
+  font-size: 11px;
+}
+
+#container p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#container blockquote {
+  margin: 0;
+}
+
+#container ul,
+#container ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#container ol ol,
+#container ul ol {
+  list-style-type: lower-roman;
+}
+
+#container ul ul ol,
+#container ul ol ol,
+#container ol ul ol,
+#container ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+#container dd {
+  margin-left: 0;
+}
+
+#container code {
+  font-family: "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  font-size: 12px;
+}
+
+#container pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+}
+
+#container .pl-0 {
+  padding-left: 0 !important;
+}
+
+#container .pl-1 {
+  padding-left: 3px !important;
+}
+
+#container .pl-2 {
+  padding-left: 6px !important;
+}
+
+#container .pl-3 {
+  padding-left: 12px !important;
+}
+
+#container .pl-4 {
+  padding-left: 24px !important;
+}
+
+#container .pl-5 {
+  padding-left: 36px !important;
+}
+
+#container .pl-6 {
+  padding-left: 48px !important;
+}
+
+#container .form-select::-ms-expand {
+  opacity: 0;
+}
+
+#container:before {
+  display: table;
+  content: "";
+}
+
+#container:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#container>*:first-child {
+  margin-top: 0 !important;
+}
+
+#container>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+#container a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+#container .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+#container .anchor:focus {
+  outline: none;
+}
+
+#container h1,
+#container h2,
+#container h3,
+#container h4,
+#container h5,
+#container h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#container h1 .octicon-link,
+#container h2 .octicon-link,
+#container h3 .octicon-link,
+#container h4 .octicon-link,
+#container h5 .octicon-link,
+#container h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+#container h1:hover .anchor,
+#container h2:hover .anchor,
+#container h3:hover .anchor,
+#container h4:hover .anchor,
+#container h5:hover .anchor,
+#container h6:hover .anchor {
+  text-decoration: none;
+}
+
+#container h1:hover .anchor .octicon-link,
+#container h2:hover .anchor .octicon-link,
+#container h3:hover .anchor .octicon-link,
+#container h4:hover .anchor .octicon-link,
+#container h5:hover .anchor .octicon-link,
+#container h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+#container h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+#container h1 .anchor {
+  line-height: 1;
+}
+
+#container h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+#container h2 .anchor {
+  line-height: 1;
+}
+
+#container h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+#container h3 .anchor {
+  line-height: 1.2;
+}
+
+#container h4 {
+  font-size: 1.25em;
+}
+
+#container h4 .anchor {
+  line-height: 1.2;
+}
+
+#container h5 {
+  font-size: 1em;
+}
+
+#container h5 .anchor {
+  line-height: 1.1;
+}
+
+#container h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+#container h6 .anchor {
+  line-height: 1.1;
+}
+
+#container p,
+#container blockquote,
+#container ul,
+#container ol,
+#container dl,
+#container table,
+#container pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+#container hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+#container ul,
+#container ol {
+  padding-left: 2em;
+}
+
+#container ul ul,
+#container ul ol,
+#container ol ol,
+#container ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#container li>p {
+  margin-top: 16px;
+}
+
+#container dl {
+  padding: 0;
+}
+
+#container dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#container dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+#container blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+#container blockquote>:first-child {
+  margin-top: 0;
+}
+
+#container blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+#container table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+#container table th {
+  font-weight: bold;
+}
+
+#container table th,
+#container table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+#container table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+#container table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+#container img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+#container code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+#container code:before,
+#container code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+#container pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+#container .highlight {
+  margin-bottom: 16px;
+}
+
+#container .highlight pre,
+#container pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+#container .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+#container pre {
+  word-wrap: normal;
+}
+
+#container pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+#container pre code:before,
+#container pre code:after {
+  content: normal;
+}
+
+#container kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+#container .pl-c {
+  color: #969896;
+}
+
+#container .pl-c1,
+#container .pl-s .pl-v {
+  color: #0086b3;
+}
+
+#container .pl-e,
+#container .pl-en {
+  color: #795da3;
+}
+
+#container .pl-s .pl-s1,
+#container .pl-smi {
+  color: #333;
+}
+
+#container .pl-ent {
+  color: #63a35c;
+}
+
+#container .pl-k {
+  color: #a71d5d;
+}
+
+#container .pl-pds,
+#container .pl-s,
+#container .pl-s .pl-pse .pl-s1,
+#container .pl-sr,
+#container .pl-sr .pl-cce,
+#container .pl-sr .pl-sra,
+#container .pl-sr .pl-sre {
+  color: #183691;
+}
+
+#container .pl-v {
+  color: #ed6a43;
+}
+
+#container .pl-id {
+  color: #b52a1d;
+}
+
+#container .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+#container .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+#container .pl-ml {
+  color: #693a17;
+}
+
+#container .pl-mh,
+#container .pl-mh .pl-en,
+#container .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+#container .pl-mq {
+  color: #008080;
+}
+
+#container .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+#container .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+#container .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+#container .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+#container .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+#container .pl-mo {
+  color: #1d3e81;
+}
+
+#container kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "Roboto Mono", "Ubuntu Mono", "Menlo", "Consolas", monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+#container .full-commit .btn-outline:not(:disabled):hover {
+  color: #4078c0;
+  border: 1px solid #4078c0;
+}
+
+#container :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #4078c0;
+}
+
+#container .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+#container .task-list-item {
+  list-style-type: none;
+}
+
+#container .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+#container .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+#container hr {
+  border-bottom-color: #eee;
+}
+</style><style>/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+</style></head><body id="container" class="export export-html"><span i="1"><h2 id="workmanager">WorkManager</h2>
+</span><span i="2"><h3 id="-workmanager-">一 WorkManager是用来做什么的？</h3>
+</span><span i="3"><blockquote>
+<span i="3"><p>WorkManager is intended for tasks that require a guarantee that the system will run them even if the app exits, like uploading app data to a server. It is not intended for in-process background work that can safely be terminated if the app process goes away; for situations like that, we recommend using ThreadPools.</p>
+</span><span i="5"><p>1 后台异步操作<br>2 即使app退出依然能够运行  </p>
+</span></blockquote>
+</span><span i="9"><h2 id="-">二 使用流程</h2>
+</span><span i="10"><p>WorkManager的API设计非常简单，每个小模块之间的分工十分明确。从大的角度来看，WorkMnager的使用需要这几样东西：<br><strong>1 Worker，是一个抽象执行体，需要具体实现，是WorkManager的业务执行模块，所有工作都在doWork方法中执行：</strong>   </p>
+</span><span i="12"><pre><code class="lang-java"><span class="hljs-meta">@NonNull</span>
+<span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> Result <span class="hljs-title">doWork</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// do something</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Result {
+        SUCCESS,
+        FAILURE,
+        RETRY
+    }
+</code></pre>
+</span><span i="26"><p><strong>2 WorkRequest，是一个数据入口，采用链式调用将执行体Worker需要的数据通过方法setInputData注入进去。WorkManager提供了两种Request，OneTimeWorkRequest(只执行一次的request，比如获取一次后台数据)以及PeriodicWorkRequest(可以设置时间间隔多次执行的request，比如定时向后台发送数据)。实例化Request需要将Worker作为Builder参数，每个request都有一个由UUID随即生成的id，然后将创建好的Request添加到WorkManager的队列中：</strong><br>2.1 OneTimeWorkRequest</p>
+</span><span i="28"><pre><code class="lang-java">Data data = <span class="hljs-keyword">new</span> Data.Builder().putString(<span class="hljs-string">"key_request_0"</span>, <span class="hljs-string">"value_0"</span>).putString(<span class="hljs-string">"key_request_1"</span>, <span class="hljs-string">"value_1"</span>).build();
+OneTimeWorkRequest mRequest = <span class="hljs-keyword">new</span> OneTimeWorkRequest.Builder(SampleWorker.class)
+    .setInputData(data).build();
+WorkManager.getInstance().enqueue(mRequest);
+</code></pre>
+</span><span i="34"><p>2.2 PeriodicWorkRequest</p>
+</span><span i="35"><pre><code class="lang-java"><span class="hljs-comment">// 每12小时执行一次，执行时机不确定，可能在间隔的末尾也可能在任何实际成熟的时候。</span>
+PeriodicWorkRequest mRequest0 = <span class="hljs-keyword">new</span> PeriodicWorkRequest.Builder(SampleWorker.class
+        , <span class="hljs-number">12</span>, TimeUnit.HOURS).build();
+
+<span class="hljs-comment">// 每12小时执行一次，执行时机不确定，可能在间隔的末尾也可能在任何实际成熟的时候。</span>
+<span class="hljs-keyword">if</span> (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.O) {
+    PeriodicWorkRequest mRequest1 = <span class="hljs-keyword">new</span> PeriodicWorkRequest.Builder(SampleWorker.class
+            , Duration.ofHours(<span class="hljs-number">12</span>)).build();
+}
+
+<span class="hljs-comment">// 没12小时执行一次，但是从repeatInterval-flexInterval开始执行，且flexInterval &lt;= repeatInterval。</span>
+PeriodicWorkRequest mRequest2 = <span class="hljs-keyword">new</span> PeriodicWorkRequest.Builder(SampleWorker.class
+        , <span class="hljs-number">12</span>, TimeUnit.HOURS
+        , <span class="hljs-number">10</span>, TimeUnit.HOURS).build();
+</code></pre>
+</span><span i="51"><p>并且PeriodicWorkRequest有严格的interval时间限制：
+<img src="WM_Request_Interval.png" alt="avatar"><br>但是如果设置的interval小于限制并不会报异常，而是自动采用最小值：
+<img src="WM_Request_Interval_0.png" alt="avatar">  </p>
+</span><span i="56"><p>如果不需要WorkManager的运行结果，写到这里就可以了。<br><strong>3  WorkStatus，结果输出者，包括Worker的完成状态(如下枚举)，对应request的id，tag以及数据(一个Date实例)的输出，WorkStatus作为request的输出需要通过WorkManager的相关方法与LiveData添加监听来获取，当WorkStatus状态变化的时候就会给LiveData回调：</strong><br>3.1 WorkStatus的状态枚举：</p>
+</span><span i="59"><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> State {
+    ENQUEUED,
+    RUNNING,
+    SUCCEEDED,
+    FAILED,
+    BLOCKED,
+    CANCELLED;
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isFinished</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">return</span> (<span class="hljs-keyword">this</span> == SUCCEEDED || <span class="hljs-keyword">this</span> == FAILED || <span class="hljs-keyword">this</span> == CANCELLED);
+    }
+}
+</code></pre>
+</span><span i="72"><p>3.2  获取WorkStatus主要有四个方法，都要添加LiveData： 
+<img src="WM_WorkStatus.png" alt="avatar"><br>3.3 具体代码： </p>
+</span><span i="75"><pre><code class="lang-java">WorkManager.getInstance().getStatusById(id).observe((LifecycleOwner) mContext, <span class="hljs-keyword">new</span> Observer&lt;WorkStatus&gt;() {
+            <span class="hljs-meta">@Override</span>
+            <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">onChanged</span><span class="hljs-params">(@Nullable WorkStatus workStatus)</span> </span>{
+                <span class="hljs-keyword">switch</span> (workStatus.getState()){
+                    <span class="hljs-keyword">case</span> ENQUEUED:{
+                        <span class="hljs-comment">// do something</span>
+                    }<span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> RUNNING:{
+                        <span class="hljs-comment">// do something</span>
+                    }<span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> SUCCEEDED:{
+                        Data output = workStatus.getOutputData();
+                        String requestStr = output.getString(WMConstants.DATA_OUTPUT_KEY_REQUEST, WMConstants.DATA_OUTPUT_DEFAULT_REQUEST);
+                        String outputStr = output.getString(WMConstants.DATA_OUTPUT_KEY_CONTENT, WMConstants.DATA_OUTPUT_DEFAULT_VALUE);
+                        Log.e(WMConstants.TAG, requestStr + <span class="hljs-string">" : "</span>+outputStr);
+                    }<span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> FAILED:{
+                        <span class="hljs-comment">// do something</span>
+                    }<span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> BLOCKED:{
+                        <span class="hljs-comment">// do something</span>
+                    }<span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> CANCELLED:{
+                        <span class="hljs-comment">// do something</span>
+                    }<span class="hljs-keyword">break</span>;
+                }
+            }
+        });
+</code></pre>
+</span><span i="105"><p>那么有一个问题，如果返回结果的时候app已经退出了，但是要进行UI操作怎么办？这已经不是WorkManager可以处理的事情了，实际上这是LiveData的职能范畴。LiveData在返回数据之前会判断绑定时LifecycleOwner的状态，不用说退出，即便是activity/fragment退入后台，也不会返回数据，不用担心造成NPE。这里不费时分析LiveData的原理，有兴趣的同学可以去看看源码，体验一下。</p>
+</span><span i="106"><h4 id="-">总结</h4>
+</span><span i="107"><p><img src="WM_flow.png" alt="avatar">    </p>
+</span><span i="108"><h2 id="-">三 灵活多变的任务链</h2>
+</span><span i="109"><p>Workmanager对于那些依赖前后返回结果的Task添加了一些使用的可以实现顺序执行的任务链的API。<br>1 A --&gt; B --&gt; c  </p>
+</span><span i="111"><pre><code class="lang-java">WorkManager.getInstance().beginWith(RequestA).then(RequestB).then(RequestC).enqueue();
+</code></pre>
+</span><span i="114"><p>这里有一个需要注意的地方，任务链的Request的都是OneTimeWorkRequest。为什么？<br>2 还可以通过WorkContinuation实现更复杂的任务链<br>A --&gt; B<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&gt;E<br>C --&gt; D    </p>
+</span><span i="119"><pre><code class="lang-java">WorkContinuation chain1 = WorkManager.getInstance()
+        .beginWith(RequestA)
+        .then(RequestB);
+WorkContinuation chain2 = WorkManager.getInstance()
+        .beginWith(RequestC)
+        .then(RequestD);
+WorkContinuation chain3 = WorkContinuation
+        .combine(chain1, chain2)
+        .then(RequestE);
+chain3.enqueue();
+</code></pre>
+</span><span i="131"><h2 id="-">四 唯一任务</h2>
+</span><span i="132"><p>每个创建的Request的ID都是经过UUID的随即获取方法随机获取到的，那么就WorkRequest而言我们基本是无法确定一个任务是否正在执行或者在队列中等待pop，所以为了解决这个问题，WorkManager中添加了方法&nbsp;<strong>beginUniqueWork</strong> 用来push唯一name的OneTimeWorkRequest：  </p>
+</span><span i="133"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> WorkContinuation <span class="hljs-title">beginUniqueWork</span><span class="hljs-params">(
+        @NonNull String uniqueWorkName,
+        @NonNull ExistingWorkPolicy existingWorkPolicy,
+        @NonNull OneTimeWorkRequest... work)</span> </span>{
+    <span class="hljs-keyword">return</span> beginUniqueWork(uniqueWorkName, existingWorkPolicy, Arrays.asList(work));
+}
+
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> WorkContinuation <span class="hljs-title">beginUniqueWork</span><span class="hljs-params">(
+        @NonNull String uniqueWorkName,
+        @NonNull ExistingWorkPolicy existingWorkPolicy,
+        @NonNull List&lt;OneTimeWorkRequest&gt; work)</span></span>;
+</code></pre>
+</span><span i="146"><pre><code class="lang-java">Data data = <span class="hljs-keyword">new</span> Data.Builder().putString(WMConstants.DATA_INPUT_KEY_REQUEST, <span class="hljs-string">"OneTimeWorkRequest"</span>).putString(WMConstants.DATA_INPUT_KEY_CONTENT, <span class="hljs-string">"enqueue date:"</span>+formatTime(System.currentTimeMillis(), <span class="hljs-string">"HH:mm:ss"</span>)).build();
+OneTimeWorkRequest mRequest = <span class="hljs-keyword">new</span> OneTimeWorkRequest.Builder(SampleWorker.class)
+        .setInputData(data).build();
+WorkManager.getInstance().beginUniqueWork(<span class="hljs-string">"unique"</span>, ExistingWorkPolicy.REPLACE, mRequest).enqueue();
+</code></pre>
+</span><span i="153"><p>如果发现队列中包含相同name的任务的话会按照ExistingWorkPolicy中的约束条件进行相应的操作。</p>
+</span><span i="154"><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> ExistingWorkPolicy {
+
+    <span class="hljs-comment">/**
+     * If there is existing pending work with the same unique name, cancel and delete it.  Then,
+     * insert the newly-specified work.
+     */</span>
+    <span class="hljs-comment">// 新任务取代旧任务</span>
+    REPLACE,
+
+    <span class="hljs-comment">/**
+     * If there is existing pending work with the same unique name, do nothing.  Otherwise, insert
+     * the newly-specified work.
+     */</span>
+    <span class="hljs-comment">// 忽略新任务</span>
+    KEEP,
+
+    <span class="hljs-comment">/**
+     * If there is existing pending work with the same unique name, append the newly-specified work
+     * as a child of all the leaves of that work sequence.  Otherwise, insert the newly-specified
+     * work as the start of a new sequence.
+     */</span>
+    <span class="hljs-comment">// 如果已经存在相同name的work，就把新任务添加到queue末尾，否则添加在queue的开头</span>
+    APPEND
+}
+</code></pre>
+</span><span i="181"><p>还有添加唯一PeriodicWorkRequest的方法enqueueUniquePeriodicWork()，和上面的方法基本一样，只是约束枚举不同，不作赘述。  </p>
+</span><span i="182"><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> ExistingPeriodicWorkPolicy {
+
+    <span class="hljs-comment">/**
+     * If there is existing pending work with the same unique name, cancel and delete it.  Then,
+     * insert the newly-specified work.
+     */</span>
+    <span class="hljs-comment">// 新任务取代旧任务</span>
+    REPLACE,
+
+    <span class="hljs-comment">/**
+     * If there is existing pending work with the same unique name, do nothing.  Otherwise, insert
+     * the newly-specified work.
+     */</span>
+    <span class="hljs-comment">// 忽略新任务</span>
+    KEEP
+}
+</code></pre>
+</span><span i="200"><h2 id="-">五 深入思考</h2>
+</span><span i="201"><p><strong><em>1 与常规的异步(AsyncTask, ThreadPool等)有何不同？</em></strong>   </p>
+</span><span i="202"><blockquote>
+<span i="202"><p>在官方给出的文档中可以看出来，WorkManager的出现并不是为了替代这些传统的异步方式。他们最大的不同，就是这些传统的方式在app退出进程被杀死的情况下是会一起被杀死的，而WorkManager可以重启进程(Application会被重新实例化，分配新的PID)，就像守护进程那样。但是这里也许是WorkManager的逻辑还不完善，在我的demo中，当只入列一个OneTimeWorkRequest的时候，杀死进程，进程有一定概率并不会重启。并且这个request会一直处于ENQUEUE状态。  </p>
+</span></blockquote>
+</span><span i="204"><p><strong><em>2 为什么能够在app杀死之后重新启动？</em></strong>  </p>
+</span><span i="205"><blockquote>
+<span i="205"><p>针对这个问题先研究一下WorkManager的源码。<br>WorkManager是个单例，但是不需要在Application中预先初始化，所以是如何初始化的？</p>
+</span><span i="207"><pre><code class="lang-java"> <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WorkManagerInitializer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ContentProvider</span> </span>{
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">onCreate</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">// Initialize WorkManager with the default configuration.</span>
+        WorkManager.initialize(getContext(), <span class="hljs-keyword">new</span> Configuration.Builder().build());
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+    }
+    <span class="hljs-comment">// nothing else</span>
+ }
+</code></pre>
+</span><span i="218"><p> WorkManager的初始化是放在自己包内的一个自定义ContentProvider里面的。这样做有什么好处？ContentProvider的onCreate方法的调用时机实际上在Application的attachBaseContext和onCraete之间，因为已经调用了attachBaseContext所以即便是调用getContext也能获得Application的context。这样至少实现了一种“隐式初始化”，其他好处不明......  </p>
+</span><span i="220"><p> <strong><em>flag_0:暂时忽略初始化方法中的new Configuration.Builder().build()</em></strong>  </p>
+</span><span i="222"><p>下一个问题，WorkManager中任务queue的执行者是谁？<br>在每次入列都会调用一个方法-&gt;enqueue()，所以从这里开始:  </p>
+</span><span i="224"><pre><code class="lang-java"><span class="hljs-meta">@Override</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">enqueue</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Only enqueue if not already enqueued.</span>
+    <span class="hljs-keyword">if</span> (!mEnqueued) {
+        <span class="hljs-comment">// The runnable walks the hierarchy of the continuations</span>
+        <span class="hljs-comment">// and marks them enqueued using the markEnqueued() method, parent first.</span>
+        mWorkManagerImpl.getTaskExecutor()
+                .executeOnBackgroundThread(<span class="hljs-keyword">new</span> EnqueueRunnable(<span class="hljs-keyword">this</span>));
+    } <span class="hljs-keyword">else</span> {
+        Log.w(TAG, String.format(<span class="hljs-string">"Already enqueued work ids (%s)"</span>, TextUtils.join(<span class="hljs-string">", "</span>, mIds)));
+    }
+}
+</code></pre>
+</span><span i="238"><p>这个方法的最终是调用了EnqueueRunnable的run方法，那么：</p>
+</span><span i="239"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (mWorkContinuation.hasCycles()) {
+        <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> IllegalStateException(
+                String.format(<span class="hljs-string">"WorkContinuation has cycles (%s)"</span>, mWorkContinuation));
+    }
+    <span class="hljs-keyword">boolean</span> needsScheduling = addToDatabase();
+    <span class="hljs-keyword">if</span> (needsScheduling) {
+        scheduleWorkInBackground();
+    }
+}
+</code></pre>
+</span><span i="251"><p>这里有一个特别奇怪的方法，暂时忽略  </p>
+</span><span i="253"><p><strong><em>flag_1:暂时忽略addToDatabase()</em></strong></p>
+</span><span i="255"><p>然后是：</p>
+</span><span i="256"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">scheduleWorkInBackground</span><span class="hljs-params">()</span> </span>{
+    WorkManagerImpl workManager = mWorkContinuation.getWorkManagerImpl();
+    Schedulers.schedule(
+            workManager.getConfiguration(),
+            workManager.getWorkDatabase(),
+            workManager.getSchedulers());
+}
+</code></pre>
+</span><span i="265"><p>这个方法里面我们需要查看第三个方法(有兴趣的人可以看看前两个方法的源码，很绕，不多说)：</p>
+</span><span i="266"><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-meta">@NonNull</span> <span class="hljs-function">List&lt;Scheduler&gt; <span class="hljs-title">getSchedulers</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Initialized at construction time. So no need to synchronize.</span>
+    <span class="hljs-keyword">if</span> (mSchedulers == <span class="hljs-keyword">null</span>) {
+        mSchedulers = Arrays.asList(
+                Schedulers.createBestAvailableBackgroundScheduler(mContext, <span class="hljs-keyword">this</span>),
+                <span class="hljs-keyword">new</span> GreedyScheduler(mContext, <span class="hljs-keyword">this</span>));
+    }
+    <span class="hljs-keyword">return</span> mSchedulers;
+}
+</code></pre>
+</span><span i="277"><p>然后：  </p>
+</span><span i="278"><pre><code class="lang-java"><span class="hljs-keyword">static</span> <span class="hljs-meta">@NonNull</span> <span class="hljs-function">Scheduler <span class="hljs-title">createBestAvailableBackgroundScheduler</span><span class="hljs-params">(
+        @NonNull Context context,
+        @NonNull WorkManagerImpl workManager)</span> </span>{
+
+    Scheduler scheduler;
+    <span class="hljs-keyword">boolean</span> enableFirebaseJobService = <span class="hljs-keyword">false</span>;
+    <span class="hljs-keyword">boolean</span> enableSystemAlarmService = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-keyword">if</span> (Build.VERSION.SDK_INT &gt;= WorkManagerImpl.MIN_JOB_SCHEDULER_API_LEVEL) {
+        scheduler = <span class="hljs-keyword">new</span> SystemJobScheduler(context, workManager);
+        setComponentEnabled(context, SystemJobService.class, <span class="hljs-keyword">true</span>);
+        Log.d(TAG, <span class="hljs-string">"Created SystemJobScheduler and enabled SystemJobService"</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">try</span> {
+            scheduler = tryCreateFirebaseJobScheduler(context);
+            enableFirebaseJobService = <span class="hljs-keyword">true</span>;
+            Log.d(TAG, <span class="hljs-string">"Created FirebaseJobScheduler"</span>);
+        } <span class="hljs-keyword">catch</span> (Exception e) {
+            <span class="hljs-comment">// Also catches the exception thrown if Play Services was not found on the device.</span>
+            scheduler = <span class="hljs-keyword">new</span> SystemAlarmScheduler(context);
+            enableSystemAlarmService = <span class="hljs-keyword">true</span>;
+            Log.d(TAG, <span class="hljs-string">"Created SystemAlarmScheduler"</span>);
+        }
+    }
+
+    <span class="hljs-keyword">try</span> {
+        Class firebaseJobServiceClass = Class.forName(FIREBASE_JOB_SERVICE_CLASSNAME);
+        setComponentEnabled(context, firebaseJobServiceClass, enableFirebaseJobService);
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException e) {
+        <span class="hljs-comment">// Do nothing.</span>
+    }
+
+    setComponentEnabled(context, SystemAlarmService.class, enableSystemAlarmService);
+
+    <span class="hljs-keyword">return</span> scheduler;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> MIN_JOB_SCHEDULER_API_LEVEL = <span class="hljs-number">23</span>;
+</code></pre>
+</span><span i="318"><p>终于来到了最关键的部分 ---&gt; 根据系统版本以及服务选取最恰当的调度器。<br>基本规则是这样的API大于23(6.0)，将选用系统的SystemJobScheduler作为底层的调度器，小于23将会优先选择FirebaseJobScheduler作为调度器，如果不存在将会使用系统的SystemAlarmScheduler(类注释：A Scheduler that schedules work using android.app.AlarmManager)<br>现在只研究第一种情况(我的测试机是这种情况......)<br>SystemJobScheduler是什么？是个调度器，用来调度任务的，并不是一个线程，也不产生线程，所以，到底是谁在执行任务？<br><strong><em>回到flag_0  </em></strong></p>
+</span><span i="323"><pre><code class="lang-java"><span class="hljs-keyword">new</span> Configuration.Builder().build()
+</code></pre>
+</span><span i="326"><p>向下一层层深入：</p>
+</span><span i="327"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Configuration</span><span class="hljs-params">(@NonNull Configuration.Builder builder)</span> </span>{
+    <span class="hljs-keyword">if</span> (builder.mExecutor == <span class="hljs-keyword">null</span>) {
+        mExecutor = createDefaultExecutor();
+    } <span class="hljs-keyword">else</span> {
+        mExecutor = builder.mExecutor;
+    }
+    <span class="hljs-comment">// .........................</span>
+}
+</code></pre>
+</span><span i="337"><p>createDefaultExecutor()方法用来创建一个executor，executor是啥？<strong><em>执行者</em></strong> </p>
+</span><span i="338"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> Executor <span class="hljs-title">createDefaultExecutor</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> Executors.newFixedThreadPool(
+            <span class="hljs-comment">// This value is the same as the core pool size for AsyncTask#THREAD_POOL_EXECUTOR.</span>
+            Math.max(<span class="hljs-number">2</span>, Math.min(Runtime.getRuntime().availableProcessors() - <span class="hljs-number">1</span>, <span class="hljs-number">4</span>)));
+}
+</code></pre>
+</span><span i="345"><p><strong><em>原来WorkManager的最底层的执行者，就是一个ThreadPool，核心数和AsyncTask一样</em></strong><br>那么到目前为止可以笼统的得出一个结论：  </p>
+</span><span i="348"><p><strong>在6.0以上，WorkManager ≈ ThreadPool + SystemJobScheduler + 某种重启机制</strong>  </p>
+</span><span i="350"><p>那么WorkManager到底是如何重启进程的？<br>连续看了五个晚上源码的我也许是方向错了也许是不够细心，并没有找到具体机制,只有一些大概的线索......  </p>
+</span></blockquote>
+</span><span i="354"><p><strong><em>3 WorkManager在进程杀死后重启进程依然能够执行添加进queue中的任务，难道进程杀死时内存数据没有清空？</em></strong> </p>
+</span><span i="355"><blockquote>
+<span i="355"><p>即便内存没有清空(不合理)，新的进程(不同的PID)也不能享受同一块内存，所以只有一种可能，保存到本地了。<br>所以想到了什么？<strong><em>flag_1</em></strong><br>每次将任务入队都会调用一个方法  </p>
+</span><span i="358"><pre><code class="lang-java">addToDatabase()
+</code></pre>
+</span><span i="361"><p>那么是怎样做到的呢(层级太深只给出具体代码):</p>
+</span><span i="362"><pre><code class="lang-java">workDatabase.workSpecDao().insertWorkSpec(workSpec);
+</code></pre>
+</span><span i="365"><p>每个WorkRequest都有一个方法用来获取一个和数据库(Room)相对应的实例的方法getWorkSpec()，获取一个WorkSpec对象：</p>
+</span><span i="366"><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WorkSpec</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String TAG = <span class="hljs-string">"WorkSpec"</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> SCHEDULE_NOT_REQUESTED_YET = -<span class="hljs-number">1</span>;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"id"</span>)
+    <span class="hljs-meta">@PrimaryKey</span>
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-keyword">public</span> String id;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"state"</span>)
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-keyword">public</span> State state = ENQUEUED;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"worker_class_name"</span>)
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-keyword">public</span> String workerClassName;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"input_merger_class_name"</span>)
+    <span class="hljs-keyword">public</span> String inputMergerClassName;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"input"</span>)
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-keyword">public</span> Data input = Data.EMPTY;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"output"</span>)
+    <span class="hljs-meta">@NonNull</span>
+    <span class="hljs-keyword">public</span> Data output = Data.EMPTY;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"initial_delay"</span>)
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> initialDelay;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"interval_duration"</span>)
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> intervalDuration;
+
+    <span class="hljs-meta">@ColumnInfo</span>(name = <span class="hljs-string">"flex_duration"</span>)
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">long</span> flexDuration;
+
+    <span class="hljs-comment">// ............................</span>
+ }
+</code></pre>
+</span><span i="407"><p>这是Room的数据库表对应的model，Room使用丰富且功能全面的注解来创建数据库。可以看到一边几乎包含所有的信息。<br>需要注意的是什么？input和output，这说明什么？说明<strong>WorkManger不仅可以保存输入还可以保存输出，所以即便是在app杀死后，过一段时间重新进入app，你也可以通过request的id或者tag找到返回的结果甚至相对应的输入数据</strong>。  </p>
+</span><span i="410"><p>那么下一个问题，数据库会一致保存下去吗？<br>肯定不会。每次创建WorkDataBase都会在create方法中调用回调generateCleanupCallback()，然后执行：</p>
+</span><span i="412"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">getPruneSQL</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> PRUNE_SQL_FORMAT_PREFIX + getPruneDate() + PRUNE_SQL_FORMAT_SUFFIX;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">long</span> <span class="hljs-title">getPruneDate</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> System.currentTimeMillis() - PRUNE_THRESHOLD_MILLIS;
+}
+
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">long</span> PRUNE_THRESHOLD_MILLIS = TimeUnit.DAYS.toMillis(<span class="hljs-number">7</span>);
+<span class="hljs-comment">// Delete rows in the workspec table that...</span>
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PRUNE_SQL_FORMAT_PREFIX = <span class="hljs-string">"DELETE FROM workspec WHERE "</span>
+        <span class="hljs-comment">// are completed...</span>
+        + <span class="hljs-string">"state IN "</span> + COMPLETED_STATES + <span class="hljs-string">" AND "</span>
+        <span class="hljs-comment">// and the minimum retention time has expired...</span>
+        + <span class="hljs-string">"(period_start_time + minimum_retention_duration) &lt; "</span>;
+
+String COMPLETED_STATES = <span class="hljs-string">"("</span> + SUCCEEDED + <span class="hljs-string">", "</span> + FAILED + <span class="hljs-string">", "</span> + CANCELLED + <span class="hljs-string">")"</span>;
+
+<span class="hljs-comment">// and all dependents are completed.</span>
+<span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PRUNE_SQL_FORMAT_SUFFIX = <span class="hljs-string">" AND "</span>
+        + <span class="hljs-string">"(SELECT COUNT(*)=0 FROM dependency WHERE "</span>
+        + <span class="hljs-string">"    prerequisite_id=id AND "</span>
+        + <span class="hljs-string">"    work_spec_id NOT IN "</span>
+        + <span class="hljs-string">"        (SELECT id FROM workspec WHERE state IN "</span> + COMPLETED_STATES + <span class="hljs-string">"))"</span>;
+</code></pre>
+</span><span i="438"><p>大概意思就是每次初始化数据库都会删除7天之外的状态是SUCCEEDED，FAILED，CANCELLED的任务，后边还有一条，由于还没仔细研究相关的数据库，没看懂......<br>到目前为止又可以笼统的得出一个结论  </p>
+</span><span i="441"><p><strong>在6.0以上，WorkManager ≈ ThreadPool + SystemJobScheduler + Room + 某种重启机制 </strong>   </p>
+</span></blockquote>
+</span><span i="443"><h2 id="-">六 还没有搞清楚的疑问</h2>
+</span><span i="444"><p>1 WorkManager到底是如何重启进程的？<br>2 我的demo日志显示，入队的任务在进程重启之后的执行顺序并不确定，是随机的，为什么？<br>3 WorkContinuationImpl的then方法在创建实例的时候是默认吧自己的name传进去的，那么就有一个问题，如果之前调用了beginUniqueWork这样的方法赋予了一个unique的name，然后调用then方法组成一个任务链，那么任务链里的request会受到ExistingWorkPolicy的约束条件的影响吗？</p>
+</span><span i="447"><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> WorkContinuation <span class="hljs-title">then</span><span class="hljs-params">(List&lt;OneTimeWorkRequest&gt; work)</span> </span>{
+    <span class="hljs-comment">// TODO (rahulrav@) We need to decide if we want to allow chaining of continuations after</span>
+    <span class="hljs-comment">// an initial call to enqueue()</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> WorkContinuationImpl(mWorkManagerImpl,
+            mName,
+            ExistingWorkPolicy.KEEP,
+            work,
+            Collections.singletonList(<span class="hljs-keyword">this</span>));
+}
+</code></pre>
+</span></body>
+</html>
