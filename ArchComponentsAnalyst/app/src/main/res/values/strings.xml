@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ArchComponentsAnalyst</string>
+    <string name="activity_label_workmanager">WorkManager</string>
 </resources>

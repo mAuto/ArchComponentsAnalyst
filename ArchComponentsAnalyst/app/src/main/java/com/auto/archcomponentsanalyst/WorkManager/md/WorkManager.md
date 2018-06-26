@@ -1,0 +1,10 @@
+## WorkManager
+
+>1 WorkManger的初始化工作放在WorkManagerInitializer中，WorkManagerInitializer继承于ContentProvider，但是只实现了一个onCreate方法，使用到了ContentProvider的什么特性？为什么这样用？可否应用到项目中？
+>>ContentProvider的onCreate方法在Application的attachBaseContext方法和onCreate方法之间调用，由于在attachBaseContext之后，所以是可以通过ContentProvider的getContext方法得到context的。把一些单例模式的初始化工作放到ContentProvider中进行原则上并不能提供多高的性能提升，并且会产生更多的文件，但是可以做到一种“无初始化”的效果。
+
+>2 WorkManager是如何做到即便app退出被杀死依然能够运行的呢？
+
+>3 WorkManager Components中有一个WorkSpec，是用来保存工作逻辑单元的基本信息的，保存这些信息的目的是什么？
+
+>4
